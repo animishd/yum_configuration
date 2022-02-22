@@ -1,0 +1,10 @@
+df -hT (To get the path of the /dev/sr0)
+vim /etc/yum.repos.d/rhel8.repo
+[AppStream]
+name= Yum form AppStream
+baseurl=file://(paste the path which you copied)/AppStream
+gpgcheck=0
+[BaseOS]
+name= Yum form BaseOS
+baseurl=file://(paste the path which you copied)/BaseOS
+gpgcheck=0
